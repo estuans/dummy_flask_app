@@ -11,7 +11,7 @@ def hello():
 
 @app.route("/foo")
 def foo():
-   return "Your lucky number is :{}".format(random.randint())
+   return "Your lucky number is :{}".format(random.randint(1,42))
 
 if __name__ == "__main__":
     app.run()
